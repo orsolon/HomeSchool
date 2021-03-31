@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h2>Bem vindo Aluno(a)</h2>
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/images/escola.jpg" class="studentImg">
+        <mat-card-footer>
+            <h3><b>Selecione a sua série:</b></h3>
+        </mat-card-footer>
+    </mat-card>
+
+
+ <div  class="container">
+    
+    <ul *ngFor="let serie of series">
+        <button mat-flat-button [style.background]="serie.color">  {{ serie.text }}</button>
+    </ul> 
+</div> 
+
