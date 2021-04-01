@@ -17,7 +17,7 @@
  <div  class="container">
     
     <ul *ngFor="let serie of series">
-        <button mat-flat-button [style.background]="serie.color">  {{ serie.text }}</button>
+        <button mat-flat-button [style.background]="serie.color" (click)="botaoClicado($event)"> {{ serie.text }}</button>
     </ul> 
 </div> 
 
