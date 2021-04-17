@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -7,9 +8,12 @@ import { AppRoutingModule } from './app.routing';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { DemoMaterialModule } from './material.module';
 import { HorarioComponent } from './horario/horario.component';
 import { LinkComponent } from './link/link.component';
+import { DemoMaterialModule } from './material.module';
+import { AuthenticationService } from './services/mock/authentication.service';
+import { LoginComponent } from './views/login/login.component';
+import { TasksComponent } from './views/tasks/tasks.component';
 
 @NgModule({
   declarations: [
@@ -19,16 +23,21 @@ import { LinkComponent } from './link/link.component';
     DashboardComponent,
     HorarioComponent,
     LinkComponent,
+    LoginComponent,
+    TasksComponent,
     
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
    
   ],
-  providers: [],
+  providers: [
+    AuthenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
