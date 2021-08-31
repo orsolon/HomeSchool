@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { SERIES } from '../mock/serie-mock';
+import { Serie } from '../model/serie';
+
 
 @Component({
   selector: 'app-home',
@@ -8,25 +12,17 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   title = 'escola';
   
-  text: string;
-  color: string;
-  
-  series: any[] = [
-    {text: "1st Grade", color: "green"},
-    {text: "2nd Grade", color: "red"},
-    {text: "3rd Grade", color: "blue"},
-    {text: "4th Grade", color: "orange"}, 
-    {text: "5th Grade", color: "gray"}
-  ]
-  
-  botaoClicado(evento: MouseEvent) {
-   
-    alert ("link: zoom.us/sala1")
-    
-  }
-   
-  constructor() { }
+ 
+  series = SERIES;
 
+ 
+  constructor(private router: Router) { }
+
+  selectedSerie?: Serie;
+  onSelected(serie: Serie){
+    this.selectedSerie = serie;
+    //this.router.navigate(['/dashboard']);
+    }
   ngOnInit(): void {
   }
 

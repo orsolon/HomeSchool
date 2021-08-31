@@ -1,0 +1,10 @@
+<app-header></app-header>
+
+<input type="text" #alunoInput>
+<button (click)="onAddAluno(alunoInput.value)">Adicionar Aluno</button>
+
+<ul>
+    <li *ngFor="let aluno of alunos">
+        {{ aluno}}
+    </li>
+</ul>

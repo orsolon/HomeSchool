@@ -14,6 +14,9 @@ import { DemoMaterialModule } from './material.module';
 import { AuthenticationService } from './services/mock/authentication.service';
 import { LoginComponent } from './views/login/login.component';
 import { TasksComponent } from './views/tasks/tasks.component';
+import { ListarAlunosComponent } from './listar-alunos/listar-alunos.component';
+import { HelloComponent } from './hello/hello.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { TasksComponent } from './views/tasks/tasks.component';
     LinkComponent,
     LoginComponent,
     TasksComponent,
+    ListarAlunosComponent,
+    HelloComponent,
     
   ],
   imports: [
@@ -36,8 +41,9 @@ import { TasksComponent } from './views/tasks/tasks.component';
    
   ],
   providers: [
-    AuthenticationService
+    AuthenticationService,
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

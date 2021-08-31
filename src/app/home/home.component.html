@@ -16,8 +16,15 @@
 
  <div  class="container">
     
-    <ul *ngFor="let serie of series">
-        <button mat-flat-button [style.background]="serie.color" (click)="botaoClicado($event)"> {{ serie.text }}</button>
+    <ul>
+        <span *ngFor="let serie of series">
+            <button mat-flat-button [style.background]="serie.color" 
+                    (click)="onSelected(serie)"> 
+                {{ serie.text }}</button>
+        </span>
     </ul> 
 </div> 
+
+ <app-dashboard [serie]="selectedSerie"></app-dashboard> -->
+
 
