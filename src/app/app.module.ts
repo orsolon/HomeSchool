@@ -15,7 +15,8 @@ import { AuthenticationService } from './services/mock/authentication.service';
 import { LoginComponent } from './views/login/login.component';
 import { TasksComponent } from './views/tasks/tasks.component';
 import { ListarAlunosComponent } from './listar-alunos/listar-alunos.component';
-import { HelloComponent } from './hello/hello.component';
+import { SerieSelectedComponent } from './dashboard/serie-selected/serie-selected.component';
+
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HelloComponent } from './hello/hello.component';
     LoginComponent,
     TasksComponent,
     ListarAlunosComponent,
-    HelloComponent,
+    SerieSelectedComponent,
+    
     
   ],
   imports: [

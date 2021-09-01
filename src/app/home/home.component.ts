@@ -12,10 +12,9 @@ import { Serie } from '../model/serie';
 export class HomeComponent implements OnInit {
   title = 'escola';
   
- 
   series = SERIES;
 
- 
+
   constructor(private router: Router) { }
 
   selectedSerie?: Serie;
