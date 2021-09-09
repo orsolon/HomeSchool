@@ -1,6 +1,6 @@
 
 
-
+<div *ngIf = "chooseSerie; else dashboard"> 
     <mat-card>
         <mat-card-header>
             <mat-card-title>
@@ -14,19 +14,21 @@
     </mat-card>
 
 
- <div  class="container">
-    
-    <ul>
-        <span *ngFor="let serie of series">
-            <button mat-flat-button [style.background]="serie.color" 
-                    (click)="onSelected(serie)" > 
-                {{ serie.text }} </button>
-        </span>
-    </ul> 
-</div> 
+    <div  class="container">
+        
+        <ul>
+            <span *ngFor="let serie of series">
+                <button mat-flat-button [style.background]="serie.color" 
+                        (click)="onSelected(serie)" > 
+                    {{ serie.text }} </button>
+            </span>
+        </ul> 
+    </div> 
+</div>
 
-    <!-- <router-outlet></router-outlet> -->
-
- <app-dashboard [serie]="selectedSerie"></app-dashboard>
+<ng-template #dashboard>
+    <app-dashboard [serie]="selectedSerie"></app-dashboard>
+</ng-template>    
+ 
 
 

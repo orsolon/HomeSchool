@@ -13,13 +13,14 @@ export class HomeComponent implements OnInit {
   title = 'escola';
   
   series = SERIES;
-
+  chooseSerie: boolean = true;
 
   constructor(private router: Router) { }
 
   selectedSerie?: Serie;
   onSelected(serie: Serie){
     this.selectedSerie = serie;
+    this.chooseSerie = false;
     //this.router.navigate(['/dashboard']);
     }
   ngOnInit(): void {
