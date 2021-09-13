@@ -16,6 +16,7 @@ import { LoginComponent } from './views/login/login.component';
 import { TasksComponent } from './views/tasks/tasks.component';
 import { ListarAlunosComponent } from './listar-alunos/listar-alunos.component';
 import { SerieSelectedComponent } from './dashboard/serie-selected/serie-selected.component';
+import { ComunicadoComponent } from './comunicado/comunicado.component';
 
 
 
@@ -31,6 +32,7 @@ import { SerieSelectedComponent } from './dashboard/serie-selected/serie-selecte
     TasksComponent,
     ListarAlunosComponent,
     SerieSelectedComponent,
+    ComunicadoComponent,
     
     
   ],

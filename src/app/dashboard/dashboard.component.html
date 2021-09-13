@@ -6,13 +6,15 @@
                 </div>
             
                 <mat-tab-group mat-align-tabs="center">
-                        <mat-tab label="Link para Aula">https://explore.zoom.us/</mat-tab>
+                        <mat-tab label="Link para Aula">
+                                <app-link></app-link>
+                        </mat-tab>
                         <mat-tab label="Horários">
-                                <div class="example-large-box mat-elevation-z4">
-                                  Tabela horários
-                                </div>
+                                  <app-horario></app-horario>
                               </mat-tab>
-                        <mat-tab label="Comunicados">Comunicados gerais</mat-tab>
+                        <mat-tab label="Comunicados">
+                                <app-comunicado></app-comunicado>
+                        </mat-tab>
                 </mat-tab-group>
          <!-- <div class="container" >
                 <a routerLink="/link" routerLinkActive="selected"> <button mat-raised-button color="warn">Link Para a Aula</button></a><br>
