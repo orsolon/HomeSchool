@@ -1,0 +1,13 @@
+{
+  "workspaceId": "22021",
+  "designSystemId": "24887",
+  "designSystemVersionId": "25583",
+  "brandId": "25349",
+  "exporterId": "25",
+  "workspaceName": "teste",
+  "designSystemName": "My Design System",
+  "designSystemVersionName": "Shared draft",
+  "exporterName": "SCSS",
+  "write_to": "supernovatestevscode",
+  "description": "Note to our fellow developers: Install Supernova integration from the VSCode marketplace and then our  SCSS exporter will synchronize design data and generate appropriate code from the  Shared draft design system every time you request it through the extension interface, fully automatically."
+}
